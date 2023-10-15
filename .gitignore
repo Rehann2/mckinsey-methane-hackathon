@@ -25,10 +25,11 @@ share/python-wheels/
 .installed.cfg
 *.egg
 
-MANIFEST
+MANIFESTs
 
 /data/*
 !/data/dataset
+!/data/dataset_split
 .Rhistory
 .DS_Store
 

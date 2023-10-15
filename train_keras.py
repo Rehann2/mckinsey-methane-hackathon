@@ -7,6 +7,11 @@ from sklearn.model_selection import train_test_split
 
 
 def define_model():
+    """Define the keras sequential model
+
+    Returns:
+        tf.keras.model: The model to train
+    """
     model = tf.keras.Sequential(
         [
             # Convolutional layers
@@ -33,6 +38,11 @@ def define_model():
 
 
 def main(train_args):
+    """Train the model and save it in models directory
+
+    Args:
+        train_args (argparse.ArgumentParser): Dictionary for terminal arguments
+    """
     # Load and preprocess your data
     data = LoadData(
         metadata_path=train_args.metadata_path,
